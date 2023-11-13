@@ -3,7 +3,9 @@ from sklearn.metrics import confusion_matrix
 import pandas as pd
 import matplotlib.pyplot as plt
 from matplotlib.font_manager import FontProperties
+import matplotlib.ticker as ticker
 import seaborn as sns
+
 
 
 # read file and strip any whitespace (adjust rows for free space which is shifted down)
@@ -24,7 +26,7 @@ movements = df[df.columns[2]].to_numpy()
 # actual_labels = np.array([1, 0, 1, 1, 0, 1, 0, 0, 1, 0])
 # predicted_labels = np.array([1, 1, 0, 1, 0, 1, 0, 1, 1, 0])
 class_order = ["Right", "Left", "Up", "Down", "Forward", "Backward", "Roll Right", "Roll Left", "Pitch Up", "Pitch Down", "Yaw Right", "Yaw Left", "NR"]
-class_labels = ["Right", "Left", "Up", "Down", "Forward", "Backward", "Roll\nRight", "Roll\nLeft", "Pitch\nUp", "Pitch\nDown", "Yaw\nRight", "Yaw\nLeft", "NR"]
+class_labels = ["Right", "Left", "Up", "Down", "Fwd", "Bwd", "Roll\nRight", "Roll\nLeft", "Pitch\nUp", "Pitch\nDown", "Yaw\nRight", "Yaw\nLeft", "NR"]
 # Create the confusion matrix
 conf_matrix = confusion_matrix(actual_labels, movements, labels=class_order)
 
@@ -37,21 +39,22 @@ print(normalized_conf_matrix)
 # print(normalized_conf_matrix)
 
 #set font properties
-font = FontProperties()
+font = FontProperties(size=15)
 font.set_weight('bold')
 
-title_font = FontProperties(size=15)
+title_font = FontProperties(size=25)
 title_font.set_weight('bold')
 
 # Create a heatmap using seaborn
 plt.figure(figsize=(12, 8))
-sns.heatmap(normalized_conf_matrix, annot=True, fmt='.1%', cmap='Blues', cbar=False, xticklabels=class_labels, yticklabels=class_labels)
-plt.xticks(rotation=0)
+sns.heatmap(normalized_conf_matrix, annot=True, fmt=".1f", cmap='Blues', cbar=False, xticklabels=class_labels, yticklabels=class_labels, annot_kws={'size': 16})
+plt.xticks(rotation=45, fontsize=13)
+plt.yticks(rotation=45, fontsize=13)
 # Remove the ticks for both x and y axes
 plt.tick_params(axis='both', which='both', length=0)
 plt.xlabel('User Response', fontproperties=font)
 plt.ylabel('Guidance Command', fontproperties=font)
-plt.title('Free Space Correlation Confusion Matrix\n', fontproperties=title_font)
+# plt.title('Free Space Correlation Confusion Matrix\n', fontproperties=title_font)
 
 # make colorbar
 # cbar = plt.colorbar()
