@@ -96,6 +96,7 @@ for i = 1:1:size(michaelaxzsquare, 1)
         michaelaxzsquare.z(i) = michaelaxzsquare.z(i) - 36;
     end
 end
+michaelaxzsquare(71:end,:) = [];
 % michaelaxzsquare(13543:size(michaelaxzsquare, 1),:) = [];
 
 %% plot all squares
@@ -112,31 +113,31 @@ plotAll(tristanxzsquare);
 
 %% plot axis-by-axis 
 
-tristan.tr_z1 = timerange('05-Sep-2023 19:18:32.038', '05-Sep-2023 19:18:33.679');
-tristan.tr_x1 = timerange('05-Sep-2023 19:18:34.680', '05-Sep-2023 19:18:36.811');
-tristan.tr_z2 = timerange('05-Sep-2023 19:18:37.811', '05-Sep-2023 19:18:40.332');
-tristan.tr_x2 = timerange('05-Sep-2023 19:18:41.333', '05-Sep-2023 19:18:42.874');
+tristan.tr_z1 = timerange('05-Sep-2023 19:18:32.038', '05-Sep-2023 19:18:34.680');
+tristan.tr_x1 = timerange('05-Sep-2023 19:18:34.680', '05-Sep-2023 19:18:37.811');
+tristan.tr_z2 = timerange('05-Sep-2023 19:18:37.811', '05-Sep-2023 19:18:41.333');
+tristan.tr_x2 = timerange('05-Sep-2023 19:18:41.333', '05-Sep-2023 19:18:43.875');
 
-andy.tr_z1 = timerange('04-Sep-2023 15:02:16.916', '04-Sep-2023 15:02:18.167');
-andy.tr_x1 = timerange('04-Sep-2023 15:02:19.167', '04-Sep-2023 15:02:24.059');
-andy.tr_z2 = timerange('04-Sep-2023 15:02:25.059', '04-Sep-2023 15:02:26.520');
-andy.tr_x2 = timerange('04-Sep-2023 15:02:27.520', '04-Sep-2023 15:02:28.841');
+andy.tr_z1 = timerange('04-Sep-2023 15:02:16.916', '04-Sep-2023 15:02:19.167');
+andy.tr_x1 = timerange('04-Sep-2023 15:02:19.167', '04-Sep-2023 15:02:25.059');
+andy.tr_z2 = timerange('04-Sep-2023 15:02:25.059', '04-Sep-2023 15:02:27.520');
+andy.tr_x2 = timerange('04-Sep-2023 15:02:27.520', '04-Sep-2023 15:02:29.842');
 
 sheela.tr_z1 = timerange('05-Sep-2023 16:49:31.774', '05-Sep-2023 16:49:55.724');
 sheela.tr_x1 = timerange('05-Sep-2023 16:49:55.724', '05-Sep-2023 16:49:58.686');
 sheela.tr_z2 = timerange('05-Sep-2023 16:49:58.686', '05-Sep-2023 16:50:01.227');
 sheela.tr_x2 = timerange('05-Sep-2023 16:50:01.227', '05-Sep-2023 16:50:05.187');
 
-michaela.tr_z1 = timerange('04-Sep-2023 18:50:53.787', '04-Sep-2023 18:50:59.088');
-michaela.tr_x1 = timerange('04-Sep-2023 18:51:00.089', '04-Sep-2023 18:51:05.160');
-michaela.tr_z2 = timerange('04-Sep-2023 18:51:06.161', '04-Sep-2023 18:51:07.821');
-michaela.tr_x2 = timerange('04-Sep-2023 18:51:08.822', '04-Sep-2023 18:51:10.883');
+michaela.tr_z1 = timerange('04-Sep-2023 18:50:53.787', '04-Sep-2023 18:51:00.089');
+michaela.tr_x1 = timerange('04-Sep-2023 18:51:00.089', '04-Sep-2023 18:51:06.161');
+michaela.tr_z2 = timerange('04-Sep-2023 18:51:06.161', '04-Sep-2023 18:51:08.822');
+michaela.tr_x2 = timerange('04-Sep-2023 18:51:08.822', '04-Sep-2023 18:51:11.00');
 
 
-% plotAxisByAxis(tristanxzsquare, tristan)
-% plotAxisByAxis(andyxzsquare, andy)
+plotAxisByAxis(tristanxzsquare, tristan)
+plotAxisByAxis(andyxzsquare, andy)
 plotAxisByAxis(sheelaxzsquare, sheela)
-% plotAxisByAxis(michaelaxzsquare, michaela)
+plotAxisByAxis(michaelaxzsquare, michaela)
 
 %% Function
 
