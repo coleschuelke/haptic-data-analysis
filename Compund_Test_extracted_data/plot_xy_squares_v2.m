@@ -121,30 +121,30 @@ y2_elapsedTimes = tableToPlot.elapsedTime(timeRangeObject.tr_y2);
 
 subplot(1,2,1)
 hold on; axis square;
-plot(tableToPlot.elapsedTime(timeRangeObject.tr_x1),tableToPlot.x(timeRangeObject.tr_x1), 'Color', "black", 'LineWidth', 2)
-plot(tableToPlot.elapsedTime(timeRangeObject.tr_x2),tableToPlot.x(timeRangeObject.tr_x2), 'Color', "black", 'LineWidth', 2)
-plot(tableToPlot.elapsedTime(timeRangeObject.tr_y2),tableToPlot.y(timeRangeObject.tr_y2), 'Color', "black", 'LineWidth', 2)
-plot(tableToPlot.elapsedTime(timeRangeObject.tr_y1),tableToPlot.y(timeRangeObject.tr_y1), 'Color', "black", 'LineWidth', 2)
+plot(seconds(tableToPlot.elapsedTime(timeRangeObject.tr_x1)),tableToPlot.x(timeRangeObject.tr_x1), 'Color', "black", 'LineWidth', 2)
+plot(seconds(tableToPlot.elapsedTime(timeRangeObject.tr_x2)),tableToPlot.x(timeRangeObject.tr_x2), 'Color', "black", 'LineWidth', 2)
+plot(seconds(tableToPlot.elapsedTime(timeRangeObject.tr_y2)),tableToPlot.y(timeRangeObject.tr_y2), 'Color', "black", 'LineWidth', 2)
+plot(seconds(tableToPlot.elapsedTime(timeRangeObject.tr_y1)),tableToPlot.y(timeRangeObject.tr_y1), 'Color', "black", 'LineWidth', 2)
 
-plot([y1_elapsedTimes(1), y1_elapsedTimes(1)], [40,-40], 'Color', "green", 'LineWidth', .01)
+plot([seconds(y1_elapsedTimes(1)), seconds(y1_elapsedTimes(1))], [40,-40], 'Color', "green", 'LineWidth', .01)
 % plot([z1_elapsedTimes(1), z1_elapsedTimes(end)], [-40,-40], 'Color', "blue", 'LineWidth', 1)
 % plot([z1_elapsedTimes(1), z1_elapsedTimes(end)], [40,40], 'Color', "blue", 'LineWidth', 1)
-plot([y1_elapsedTimes(end), y1_elapsedTimes(end)], [-40,40], 'Color', "green", 'LineWidth', .1)
+plot([seconds(y1_elapsedTimes(end)), seconds(y1_elapsedTimes(end))], [-40,40], 'Color', "green", 'LineWidth', .1)
 
-plot([x1_elapsedTimes(1), x1_elapsedTimes(1)], [40,-40], 'Color', "red", 'LineWidth', .01)
+plot([seconds(x1_elapsedTimes(1)), seconds(x1_elapsedTimes(1))], [40,-40], 'Color', "red", 'LineWidth', .01)
 % plot([x1_elapsedTimes(1), x1_elapsedTimes(end)], [-40,-40], 'Color', "red", 'LineWidth', 1)
 % plot([x1_elapsedTimes(1), x1_elapsedTimes(end)], [40,40], 'Color', "red", 'LineWidth', 1)
-plot([x1_elapsedTimes(end), x1_elapsedTimes(end)], [-40,40], 'Color', "red", 'LineWidth', .01)
+plot([seconds(x1_elapsedTimes(end)), seconds(x1_elapsedTimes(end))], [-40,40], 'Color', "red", 'LineWidth', .01)
 
-plot([x2_elapsedTimes(1), x2_elapsedTimes(1)], [40,-40], 'Color', "red", 'LineWidth', .01)
+plot([seconds(x2_elapsedTimes(1)), seconds(x2_elapsedTimes(1))], [40,-40], 'Color', "red", 'LineWidth', .01)
 % plot([x2_elapsedTimes(1), x2_elapsedTimes(end)], [-40,-40], 'Color', "red", 'LineWidth', 1)
 % plot([x2_elapsedTimes(1), x2_elapsedTimes(end)], [40,40], 'Color', "red", 'LineWidth', 1)
-plot([x2_elapsedTimes(end), x2_elapsedTimes(end)], [-40,40], 'Color', "red", 'LineWidth', .01)
+plot([seconds(x2_elapsedTimes(end)), seconds(x2_elapsedTimes(end))], [-40,40], 'Color', "red", 'LineWidth', .01)
 
-plot([y2_elapsedTimes(1), y2_elapsedTimes(1)], [40,-40], 'Color', "green", 'LineWidth', .01)
+plot([seconds(y2_elapsedTimes(1)), seconds(y2_elapsedTimes(1))], [40,-40], 'Color', "green", 'LineWidth', .01)
 % plot([z2_elapsedTimes(1), z2_elapsedTimes(end)], [-40,-40], 'Color', "blue", 'LineWidth', 1)
 % plot([z2_elapsedTimes(1), z2_elapsedTimes(end)], [40,40], 'Color', "blue", 'LineWidth', 1)
-plot([y2_elapsedTimes(end), y2_elapsedTimes(end)], [-40,40], 'Color', "green", 'LineWidth', .01)
+plot([seconds(y2_elapsedTimes(end)), seconds(y2_elapsedTimes(end))], [-40,40], 'Color', "green", 'LineWidth', .01)
 
 subplot(1,2,2)
 hold on; axis square;
