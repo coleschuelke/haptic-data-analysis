@@ -73,20 +73,20 @@ plotAll(tristanxysquare);
 
 %% plot axis-by-axis 
 
-tristan.tr_y1 = timerange('05-Sep-2023 19:17:56.913', '05-Sep-2023 19:17:59.794');
-tristan.tr_x1 = timerange('05-Sep-2023 19:18:00.795', '05-Sep-2023 19:18:03.145');
-tristan.tr_y2 = timerange('05-Sep-2023 19:18:04.146', '05-Sep-2023 19:18:06.057');
-tristan.tr_x2 = timerange('05-Sep-2023 19:18:07.057', '05-Sep-2023 19:18:08.828');
+tristan.tr_y1 = timerange('05-Sep-2023 19:17:56.913', '05-Sep-2023 19:18:00.795');
+tristan.tr_x1 = timerange('05-Sep-2023 19:18:00.795', '05-Sep-2023 19:18:04.146');
+tristan.tr_y2 = timerange('05-Sep-2023 19:18:04.146', '05-Sep-2023 19:18:07.057');
+tristan.tr_x2 = timerange('05-Sep-2023 19:18:07.057', '05-Sep-2023 19:18:09.829');
 
-andy.tr_y1 = timerange('04-Sep-2023 15:00:43.906', '04-Sep-2023 15:00:47.197');
-andy.tr_x1 = timerange('04-Sep-2023 15:00:48.199', '04-Sep-2023 15:00:49.899');
-andy.tr_y2 = timerange('04-Sep-2023 15:00:50.899', '04-Sep-2023 15:00:52.199');
-andy.tr_x2 = timerange('04-Sep-2023 15:00:53.200', '04-Sep-2023 15:00:55.201');
+andy.tr_y1 = timerange('04-Sep-2023 15:00:43.906', '04-Sep-2023 15:00:48.199');
+andy.tr_x1 = timerange('04-Sep-2023 15:00:48.199', '04-Sep-2023 15:00:50.899');
+andy.tr_y2 = timerange('04-Sep-2023 15:00:50.899', '04-Sep-2023 15:00:53.200');
+andy.tr_x2 = timerange('04-Sep-2023 15:00:53.200', '04-Sep-2023 15:00:56.201');
 
-sheela.tr_y1 = timerange('05-Sep-2023 16:52:59.401', '05-Sep-2023 16:53:02.362');
-sheela.tr_x1 = timerange('05-Sep-2023 16:53:03.362', '05-Sep-2023 16:53:04.944');
-sheela.tr_y2 = timerange('05-Sep-2023 16:53:05.943', '05-Sep-2023 16:53:07.674');
-sheela.tr_x2 = timerange('05-Sep-2023 16:53:08.674', '05-Sep-2023 16:53:12.035');
+sheela.tr_y1 = timerange('05-Sep-2023 16:52:59.401', '05-Sep-2023 16:53:03.362');
+sheela.tr_x1 = timerange('05-Sep-2023 16:53:03.362', '05-Sep-2023 16:53:05.943');
+sheela.tr_y2 = timerange('05-Sep-2023 16:53:05.943', '05-Sep-2023 16:53:08.674');
+sheela.tr_x2 = timerange('05-Sep-2023 16:53:08.674', '05-Sep-2023 16:53:13.036');
 
 plotAxisByAxis(tristanxysquare, tristan)
 plotAxisByAxis(andyxysquare, andy)
