@@ -122,10 +122,10 @@ andy.tr_x1 = timerange('04-Sep-2023 15:02:19.167', '04-Sep-2023 15:02:24.059');
 andy.tr_z2 = timerange('04-Sep-2023 15:02:25.059', '04-Sep-2023 15:02:26.520');
 andy.tr_x2 = timerange('04-Sep-2023 15:02:27.520', '04-Sep-2023 15:02:28.841');
 
-sheela.tr_z1 = timerange('05-Sep-2023 16:49:31.774', '05-Sep-2023 16:49:54.724');
-sheela.tr_x1 = timerange('05-Sep-2023 16:49:55.724', '05-Sep-2023 16:49:57.685');
-sheela.tr_z2 = timerange('05-Sep-2023 16:49:58.686', '05-Sep-2023 16:50:00.226');
-sheela.tr_x2 = timerange('05-Sep-2023 16:50:01.227', '05-Sep-2023 16:50:04.187');
+sheela.tr_z1 = timerange('05-Sep-2023 16:49:31.774', '05-Sep-2023 16:49:55.724');
+sheela.tr_x1 = timerange('05-Sep-2023 16:49:55.724', '05-Sep-2023 16:49:58.686');
+sheela.tr_z2 = timerange('05-Sep-2023 16:49:58.686', '05-Sep-2023 16:50:01.227');
+sheela.tr_x2 = timerange('05-Sep-2023 16:50:01.227', '05-Sep-2023 16:50:05.187');
 
 michaela.tr_z1 = timerange('04-Sep-2023 18:50:53.787', '04-Sep-2023 18:50:59.088');
 michaela.tr_x1 = timerange('04-Sep-2023 18:51:00.089', '04-Sep-2023 18:51:05.160');
@@ -133,10 +133,10 @@ michaela.tr_z2 = timerange('04-Sep-2023 18:51:06.161', '04-Sep-2023 18:51:07.821
 michaela.tr_x2 = timerange('04-Sep-2023 18:51:08.822', '04-Sep-2023 18:51:10.883');
 
 
-plotAxisByAxis(tristanxzsquare, tristan)
-plotAxisByAxis(andyxzsquare, andy)
+% plotAxisByAxis(tristanxzsquare, tristan)
+% plotAxisByAxis(andyxzsquare, andy)
 plotAxisByAxis(sheelaxzsquare, sheela)
-plotAxisByAxis(michaelaxzsquare, michaela)
+% plotAxisByAxis(michaelaxzsquare, michaela)
 
 %% Function
 
