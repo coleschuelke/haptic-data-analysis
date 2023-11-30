@@ -131,7 +131,7 @@ sheela.tr_x2 = timerange('05-Sep-2023 16:50:01.227', '05-Sep-2023 16:50:05.187')
 michaela.tr_z1 = timerange('04-Sep-2023 18:50:53.787', '04-Sep-2023 18:51:00.089');
 michaela.tr_x1 = timerange('04-Sep-2023 18:51:00.089', '04-Sep-2023 18:51:06.161');
 michaela.tr_z2 = timerange('04-Sep-2023 18:51:06.161', '04-Sep-2023 18:51:08.822');
-michaela.tr_x2 = timerange('04-Sep-2023 18:51:08.822', '04-Sep-2023 18:51:11.00');
+michaela.tr_x2 = timerange('04-Sep-2023 18:51:08.822', '04-Sep-2023 18:51:11.884');
 
 
 plotAxisByAxis(tristanxzsquare, tristan)
